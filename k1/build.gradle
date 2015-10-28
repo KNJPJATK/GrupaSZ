@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  testCompile 'junit:junit:4.+'
+  testCompile 'org.assertj:assertj-core:3.+'
+  testCompile 'org.mockito:mockito-all:1+'
+}
+
+jar {
+  baseName = 'k1'
+}
